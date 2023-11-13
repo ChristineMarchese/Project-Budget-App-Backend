@@ -42,7 +42,7 @@ budget.put("/:id", express.json(), (req, res) => {
         budgetArray[id] = req.body;
         res.send(budgetArray[id]);
     } else {
-        res.status(404).send("message: not message")
+        res.status(404).send("message: not found")
     }
 });
 
